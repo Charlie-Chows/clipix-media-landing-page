@@ -7,7 +7,7 @@ import SpecialOffers from './components/SpecialOffers';
 import WhyChooseUs from './components/WhyChooseUs';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import './app.css';
+import './App.css';
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
