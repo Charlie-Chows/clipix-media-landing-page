@@ -1,0 +1,872 @@
+/* Complete Dark Theme Fix */
+:root {
+  --primary: #6a11cb;
+  --secondary: #2575fc;
+  --accent: #ff4d8d;
+  
+  /* Light theme */
+  --bg-light: #ffffff;
+  --text-light: #1a1a2e;
+  --text-secondary-light: #6c757d;
+  --card-light: #ffffff;
+  --border-light: #e9ecef;
+  
+  /* Dark theme */
+  --bg-dark: #0f0f1a;
+  --text-dark: #ffffff;
+  --text-secondary-dark: #b0b0c0;
+  --card-dark: #1a1a2e;
+  --border-dark: #2d2d44;
+  --shadow-dark: rgba(0, 0, 0, 0.3);
+}
+
+/* Base styles */
+body {
+  background-color: var(--bg-light);
+  color: var(--text-light);
+  line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark theme */
+body.dark-theme {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+/* Header */
+body.dark-theme header {
+  background-color: var(--card-dark);
+  box-shadow: 0 2px 10px var(--shadow-dark);
+}
+
+body.dark-theme .logo {
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+body.dark-theme .nav-links a {
+  color: var(--text-dark);
+}
+
+body.dark-theme .nav-links a:hover {
+  color: var(--primary);
+}
+
+body.dark-theme .mobile-menu {
+  color: var(--text-dark);
+}
+
+/* Hero section - Keep gradient but adjust text */
+body.dark-theme .hero {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  color: white; /* Ensure text is visible on gradient */
+}
+
+body.dark-theme .hero p {
+  opacity: 0.95;
+}
+
+/* Services section */
+body.dark-theme .service-card {
+  background-color: var(--card-dark);
+  border: 1px solid var(--border-dark);
+  box-shadow: 0 5px 15px var(--shadow-dark);
+}
+
+body.dark-theme .service-card:hover {
+  box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+  transform: translateY(-10px);
+}
+
+body.dark-theme .service-card h3 {
+  color: var(--text-dark);
+}
+
+body.dark-theme .service-card p {
+  color: var(--text-secondary-dark);
+}
+
+body.dark-theme .service-icon {
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Pricing section */
+body.dark-theme #pricing {
+  background-color: #151522 !important;
+}
+
+body.dark-theme .pricing-card {
+  background-color: var(--card-dark);
+  border: 1px solid var(--border-dark);
+  box-shadow: 0 5px 15px var(--shadow-dark);
+}
+
+body.dark-theme .pricing-card.featured {
+  border: 2px solid var(--primary);
+}
+
+body.dark-theme .plan-name {
+  color: var(--text-dark);
+}
+
+body.dark-theme .plan-price {
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+body.dark-theme .plan-features li {
+  color: var(--text-secondary-dark);
+  border-bottom: 1px solid var(--border-dark);
+}
+
+body.dark-theme .plan-button {
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+  color: white;
+}
+
+body.dark-theme .plan-button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+/* Special Offers */
+body.dark-theme .offers-container {
+  background-color: var(--card-dark);
+  border: 1px solid var(--border-dark);
+}
+
+body.dark-theme .offer-item h3 {
+  color: var(--text-dark);
+}
+
+body.dark-theme .offer-item p {
+  color: var(--text-secondary-dark);
+}
+
+body.dark-theme .offer-icon {
+  color: var(--primary);
+}
+
+/* Why Choose Us */
+body.dark-theme #why {
+  background-color: #151522 !important;
+}
+
+body.dark-theme .benefit-item {
+  background-color: var(--card-dark);
+  border: 1px solid var(--border-dark);
+  box-shadow: 0 5px 15px var(--shadow-dark);
+}
+
+body.dark-theme .benefit-item h3 {
+  color: var(--text-dark);
+}
+
+body.dark-theme .benefit-item p {
+  color: var(--text-secondary-dark);
+}
+
+/* Contact section */
+body.dark-theme .contact-item h3 {
+  color: var(--text-dark);
+}
+
+body.dark-theme .contact-item p,
+body.dark-theme .contact-item a {
+  color: var(--text-secondary-dark);
+}
+
+body.dark-theme .contact-icon {
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+  color: white;
+}
+
+/* Footer */
+body.dark-theme footer {
+  background-color: #0a0a14;
+  color: var(--text-dark);
+}
+
+body.dark-theme .footer-logo {
+  background: linear-gradient(to right, #ffffff, #dddddd);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+body.dark-theme .footer-content p {
+  color: var(--text-secondary-dark);
+}
+
+body.dark-theme .social-links a {
+  background-color: rgba(255,255,255,0.1);
+  color: var(--text-dark);
+}
+
+body.dark-theme .social-links a:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+body.dark-theme .copyright {
+  color: rgba(255,255,255,0.5);
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Section titles */
+body.dark-theme .section-title h2 {
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+body.dark-theme .section-title p {
+  color: var(--text-secondary-dark);
+}
+
+/* Buttons */
+body.dark-theme .cta-button {
+  background-color: var(--accent);
+  color: white;
+}
+
+body.dark-theme .cta-button:hover {
+  background-color: #ff3d7f;
+  transform: translateY(-3px);
+}
+
+/* Mobile menu dark theme */
+body.dark-theme .nav-links.active {
+  background-color: var(--card-dark);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+body.dark-theme .nav-links.active a {
+  color: var(--text-dark);
+}
+
+body.dark-theme .nav-links.active a:hover {
+  background-color: rgba(255,255,255,0.1);
+  color: var(--primary);
+}
+
+/* Inputs and form elements */
+body.dark-theme input,
+body.dark-theme textarea,
+body.dark-theme select {
+  background-color: var(--card-dark);
+  color: var(--text-dark);
+  border: 1px solid var(--border-dark);
+}
+
+/* Scrollbar */
+body.dark-theme ::-webkit-scrollbar {
+  width: 10px;
+}
+
+body.dark-theme ::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+}
+
+body.dark-theme ::-webkit-scrollbar-thumb {
+  background: var(--border-dark);
+  border-radius: 5px;
+}
+
+body.dark-theme ::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+/* Fix for invisible elements */
+body.dark-theme .container {
+  /* Ensure container text is visible */
+}
+
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme h4,
+body.dark-theme h5,
+body.dark-theme h6 {
+  color: var(--text-dark);
+}
+
+body.dark-theme p {
+  color: var(--text-secondary-dark);
+}
+
+/* Specific fix for any white-on-white issues */
+body.dark-theme * {
+  /* Force all text to be visible */
+  color: inherit;
+}
+
+/* Ensure links are visible */
+body.dark-theme a {
+  color: var(--primary);
+}
+
+body.dark-theme a:hover {
+  color: var(--secondary);
+}
+
+/* Theme toggle button */
+body.dark-theme .theme-toggle {
+  color: var(--text-dark);
+}
+
+body.dark-theme .theme-toggle:hover {
+  color: var(--primary);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+  --primary: #6a11cb;
+  --secondary: #2575fc;
+  --dark: #1a1a2e;
+  --light: #f8f9fa;
+  --accent: #ff4d8d;
+  --gray: #6c757d;
+  --light-gray: #e9ecef;
+}
+
+body {
+  background-color: #fff;
+  color: var(--dark);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+header {
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 800;
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 600;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.nav-links a:hover {
+  color: var(--primary);
+}
+
+.mobile-menu {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  color: white;
+  padding: 180px 0 100px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  opacity: 0.9;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: var(--accent);
+  color: white;
+  padding: 15px 35px;
+  border-radius: 50px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  cursor: pointer;
+  border: none;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Sections */
+section {
+  padding: 80px 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-title h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+.section-title p {
+  color: var(--gray);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Services */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.service-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+/* Remove gradient background-clip from service icons and use solid color instead */
+.service-icon {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  color: var(--primary); /* Use solid color instead of gradient */
+}
+
+/* Dark theme specific - ensure icons are visible */
+body.dark-theme .service-icon {
+  color: var(--primary) !important; /* Force primary color in dark mode */
+}
+
+/* Make sure SVG icons inherit the color */
+.service-icon svg {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: inherit;
+  fill: currentColor;
+}
+
+/* Special offers icons should use primary color too */
+body.dark-theme .offer-icon {
+  color: var(--primary) !important;
+}
+
+/* Pricing */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.pricing-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 40px 30px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s;
+}
+
+.pricing-card.featured {
+  border: 2px solid var(--primary);
+  transform: scale(1.05);
+}
+
+.pricing-card:hover {
+  transform: translateY(-10px);
+}
+
+.pricing-card.featured:hover {
+  transform: scale(1.05) translateY(-10px);
+}
+
+.plan-name {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: var(--dark);
+}
+
+.plan-price {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.plan-features {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.plan-features li {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.plan-features li:last-child {
+  border-bottom: none;
+}
+
+.plan-button {
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  width: 100%;
+}
+
+.plan-button:hover {
+  opacity: 0.9;
+}
+
+/* Special Offers */
+.offers-container {
+  background-color: var(--light);
+  border-radius: 15px;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.offer-item {
+  text-align: center;
+  padding: 20px;
+}
+
+.offer-icon {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--primary);
+}
+
+/* Why Choose Us */
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.benefit-item {
+  background-color: white;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+/* Contact */
+.contact-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 50px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.contact-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+  background-color: var(--dark);
+  color: white;
+  padding: 60px 0 30px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-logo {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  background: linear-gradient(to right, #fff, #ddd);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-links a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.1);
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  background-color: var(--primary);
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  color: rgba(255,255,255,0.7);
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .hero h1 {
+    font-size: 2.8rem;
+  }
+  
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    flex-direction: column;
+    padding: 20px 0;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+  
+  .nav-links.active {
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin: 0;
+    text-align: center;
+    padding: 15px 0;
+  }
+  
+  .mobile-menu {
+    display: block;
+  }
+  
+  .pricing-card.featured {
+    transform: none;
+  }
+  
+  .pricing-card.featured:hover {
+    transform: translateY(-10px);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+  
+  section {
+    padding: 60px 0;
+  }
+  
+  .offers-container {
+    padding: 30px;
+  }
+  
+  .services-grid,
+  .pricing-grid,
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Theme toggle button styling */
+.theme-toggle {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1);
+  color: var(--primary);
+}
+
+/* Dark theme adjustments for buttons */
+body.dark-theme .cta-button {
+  background-color: var(--accent);
+  color: white;
+}
+
+body.dark-theme .plan-button {
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+  color: white;
+}
+
+body.dark-theme .service-icon {
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+body.dark-theme .offer-icon {
+  color: var(--primary);
+}
+
+/* Mobile menu dark theme */
+body.dark-theme .nav-links.active {
+  background-color: var(--card-dark);
+}
+
+body.dark-theme .nav-links.active a:hover {
+  background-color: rgba(255,255,255,0.1);
+}
+
+/* Improve text contrast in dark mode */
+body.dark-theme .service-card p,
+body.dark-theme .benefit-item p,
+body.dark-theme .offer-item p {
+  color: var(--text-secondary-dark);
+}
+
+/* Hero section dark theme */
+body.dark-theme .hero {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+}
+
+/* Contact section dark theme */
+body.dark-theme .contact-icon {
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+}
+
+/* Add smooth transitions for all theme changes */
+* {
+  transition: background-color 0.3s ease, 
+              color 0.3s ease, 
+              border-color 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .theme-toggle {
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .theme-toggle {
+    right: 50px;
+  }
+}
